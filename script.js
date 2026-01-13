@@ -237,16 +237,24 @@ function initParticles() {
 
 function createParticle(container) {
     const particle = document.createElement('div');
+    const colors = [
+        'rgba(99, 102, 241, 0.4)',   // Primary purple
+        'rgba(236, 72, 153, 0.4)',   // Secondary pink
+        'rgba(20, 184, 166, 0.4)',   // Accent teal
+    ];
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    
     particle.style.cssText = `
         position: absolute;
-        width: ${Math.random() * 4 + 1}px;
-        height: ${Math.random() * 4 + 1}px;
-        background: rgba(0, 212, 255, ${Math.random() * 0.5 + 0.1});
+        width: ${Math.random() * 6 + 2}px;
+        height: ${Math.random() * 6 + 2}px;
+        background: ${color};
         border-radius: 50%;
         left: ${Math.random() * 100}%;
         top: ${Math.random() * 100}%;
-        animation: float ${Math.random() * 10 + 10}s linear infinite;
+        animation: float ${Math.random() * 15 + 10}s linear infinite;
         pointer-events: none;
+        filter: blur(1px);
     `;
     container.appendChild(particle);
 }
