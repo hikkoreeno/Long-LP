@@ -238,16 +238,16 @@ function initParticles() {
 function createParticle(container) {
     const particle = document.createElement('div');
     const colors = [
-        'rgba(99, 102, 241, 0.4)',   // Primary purple
-        'rgba(236, 72, 153, 0.4)',   // Secondary pink
-        'rgba(20, 184, 166, 0.4)',   // Accent teal
+        'rgba(255, 107, 107, 0.4)',   // Primary coral/red
+        'rgba(255, 179, 71, 0.4)',    // Secondary orange
+        'rgba(255, 154, 139, 0.4)',   // Accent peach
     ];
     const color = colors[Math.floor(Math.random() * colors.length)];
     
     particle.style.cssText = `
         position: absolute;
-        width: ${Math.random() * 6 + 2}px;
-        height: ${Math.random() * 6 + 2}px;
+        width: ${Math.random() * 8 + 3}px;
+        height: ${Math.random() * 8 + 3}px;
         background: ${color};
         border-radius: 50%;
         left: ${Math.random() * 100}%;
