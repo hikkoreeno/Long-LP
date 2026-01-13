@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIと会話するだけでアプリが作れる。プログラミング経験ゼロでも2週間で習得できるバイブコーディング短期集中講座。">
+    <meta name="keywords" content="バイブコーディング, AI開発, プログラミング講座, Cursor, Claude, ChatGPT, vibe coding">
+    <meta name="author" content="Vibe Coding Academy">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="バイブコーディング短期集中講座 | AIでアプリ開発を始めよう">
+    <meta property="og:description" content="AIと会話するだけでアプリが作れる。プログラミング経験ゼロでも2週間で習得できるバイブコーディング短期集中講座。">
+    <meta property="og:image" content="https://placehold.co/1200x630/0F172A/00D4FF?text=Vibe+Coding+Academy">
+    <meta property="og:url" content="https://example.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="バイブコーディング短期集中講座">
+    <meta name="twitter:description" content="AIと会話するだけでアプリが作れる時代。2週間で習得できる短期集中講座。">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0F172A">
+    
+    <title>バイブコーディング短期集中講座 | AIでアプリ開発を始めよう</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <span class="header__logo-icon">⚡</span>
+                <span class="header__logo-text">Vibe<span class="header__logo-accent">Coding</span></span>
+            </a>
+            
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li><a href="#features" class="header__nav-link">特徴</a></li>
+                    <li><a href="#curriculum" class="header__nav-link">カリキュラム</a></li>
+                    <li><a href="#instructors" class="header__nav-link">講師紹介</a></li>
+                    <li><a href="#pricing" class="header__nav-link">料金</a></li>
+                    <li><a href="#faq" class="header__nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#cta" class="header__cta btn btn--primary btn--sm">
+                無料体験に申し込む
+            </a>
+            
+            <button class="header__menu-toggle" id="menuToggle" aria-label="メニューを開く">
+                <span class="header__menu-bar"></span>
+                <span class="header__menu-bar"></span>
+                <span class="header__menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION
+    ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__gradient"></div>
+        
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__title-line">AIと会話するだけで、</span>
+                    <span class="hero__title-line hero__title-line--accent">アプリが作れる時代。</span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    プログラミング経験ゼロでも、たった<strong>2週間</strong>で自分のアイデアを形にできる<br>
+                    <span class="hero__subtitle-highlight">バイブコーディング短期集中講座</span>
+                </p>
+                
+                <div class="hero__cta-group">
+                    <a href="#cta" class="btn btn--primary btn--lg btn--glow">
+                        <span class="btn__icon">🚀</span>
+                        無料体験に申し込む
+                    </a>
+                    <a href="#features" class="btn btn--outline btn--lg">
+                        講座の詳細を見る
+                    </a>
+                </div>
+                
+                <div class="hero__badges">
+                    <div class="hero__badge">
+                        <span class="hero__badge-number">98%</span>
+                        <span class="hero__badge-label">受講者満足度</span>
+                    </div>
+                    <div class="hero__badge">
+                        <span class="hero__badge-number">500+</span>
+                        <span class="hero__badge-label">累計受講者数</span>
+                    </div>
+                    <div class="hero__badge">
+                        <span class="hero__badge-number">2週間</span>
+                        <span class="hero__badge-label">最短習得期間</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__visual">
+                <div class="hero__code-window">
+                    <div class="hero__code-header">
+                        <span class="hero__code-dot hero__code-dot--red"></span>
+                        <span class="hero__code-dot hero__code-dot--yellow"></span>
+                        <span class="hero__code-dot hero__code-dot--green"></span>
+                        <span class="hero__code-title">vibe-coding.ai</span>
+                    </div>
+                    <div class="hero__code-body">
+                        <div class="hero__chat-message hero__chat-message--user">
+                            <span class="hero__chat-label">You</span>
+                            <p>タスク管理アプリを作って。ドラッグ&ドロップで並び替えできるようにして。</p>
+                        </div>
+                        <div class="hero__chat-message hero__chat-message--ai">
+                            <span class="hero__chat-label">AI</span>
+                            <p>タスク管理アプリを作成します。React + TypeScriptで実装し、react-beautiful-dndでドラッグ&ドロップ機能を追加しますね。</p>
+                            <div class="hero__typing-indicator">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero__scroll-indicator">
+            <span class="hero__scroll-text">Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROBLEMS SECTION
+    ======================================== -->
+    <section class="problems" id="problems">
+        <div class="container">
+            <h2 class="section-title section-title--center">
+                <span class="section-title__sub">Problems</span>
+                こんなお悩みありませんか？
+            </h2>
+            
+            <div class="problems__grid">
+                <div class="problems__card">
+                    <div class="problems__icon">💡</div>
+                    <p class="problems__text">アイデアはあるのに、<br><strong>プログラミングができなくて</strong><br>形にできない</p>
+                </div>
+                
+                <div class="problems__card">
+                    <div class="problems__icon">💰</div>
+                    <p class="problems__text">外注すると<strong>高額</strong>で、<br>思い通りのものが作れない</p>
+                </div>
+                
+                <div class="problems__card">
+                    <div class="problems__icon">😫</div>
+                    <p class="problems__text">プログラミングスクールに<br>通ったが、<strong>挫折</strong>してしまった</p>
+                </div>
+                
+                <div class="problems__card">
+                    <div class="problems__icon">🤝</div>
+                    <p class="problems__text">エンジニアとの<br><strong>コミュニケーション</strong>が<br>うまくいかない</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SOLUTION SECTION
+    ======================================== -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <h2 class="section-title section-title--center section-title--light">
+                <span class="section-title__sub">Solution</span>
+                バイブコーディングなら、<br class="sp-only">すべて解決できます
+            </h2>
+            
+            <div class="solution__intro">
+                <div class="solution__intro-content">
+                    <h3 class="solution__intro-title">バイブコーディングとは？</h3>
+                    <p class="solution__intro-text">
+                        バイブコーディング（Vibe Coding）は、<strong>AIと自然言語で会話しながらプログラミングを行う</strong>革新的な開発手法です。
+                        従来のようにコードを一行一行書く必要はありません。あなたのアイデアを言葉で伝えるだけで、AIが最適なコードを生成してくれます。
+                    </p>
+                </div>
+                <div class="solution__intro-visual">
+                    <img src="https://placehold.co/500x300/1E293B/00D4FF?text=Vibe+Coding+Demo" alt="バイブコーディングのデモ" class="solution__intro-image">
+                </div>
+            </div>
+            
+            <div class="solution__points">
+                <div class="solution__point">
+                    <div class="solution__point-icon">💬</div>
+                    <h4 class="solution__point-title">自然言語でAIに指示するだけ</h4>
+                    <p class="solution__point-text">「こんなアプリが作りたい」と伝えるだけ。専門用語は不要です。</p>
+                </div>
+                
+                <div class="solution__point">
+                    <div class="solution__point-icon">🚫</div>
+                    <h4 class="solution__point-title">コードを書く必要なし</h4>
+                    <p class="solution__point-text">AIが自動でコードを生成。あなたは結果を確認するだけ。</p>
+                </div>
+                
+                <div class="solution__point">
+                    <div class="solution__point-icon">🔄</div>
+                    <h4 class="solution__point-title">修正も会話で完結</h4>
+                    <p class="solution__point-text">「ここを変えて」と伝えれば、AIが即座に修正してくれます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FEATURES SECTION
+    ======================================== -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title section-title--center">
+                <span class="section-title__sub">Features</span>
+                選ばれる5つの理由
+            </h2>
+            
+            <div class="features__grid">
+                <div class="features__card">
+                    <div class="features__card-number">01</div>
+                    <div class="features__card-icon">🌐</div>
+                    <h3 class="features__card-title">完全オンライン</h3>
+                    <p class="features__card-text">場所を選ばず、自分のペースで学習できます。通学の必要はありません。</p>
+                </div>
+                
+                <div class="features__card">
+                    <div class="features__card-number">02</div>
+                    <div class="features__card-icon">⚡</div>
+                    <h3 class="features__card-title">実践重視カリキュラム</h3>
+                    <p class="features__card-text">座学は最小限。手を動かしながら学ぶことで、確実にスキルが身につきます。</p>
+                </div>
+                
+                <div class="features__card">
+                    <div class="features__card-number">03</div>
+                    <div class="features__card-icon">👨‍💻</div>
+                    <h3 class="features__card-title">現役エンジニア講師</h3>
+                    <p class="features__card-text">最前線で活躍するプロから、実務で使える知識を直接学べます。</p>
+                </div>
+                
+                <div class="features__card">
+                    <div class="features__card-number">04</div>
+                    <div class="features__card-icon">🎯</div>
+                    <h3 class="features__card-title">少人数制サポート</h3>
+                    <p class="features__card-text">質問し放題の環境で、一人ひとりに寄り添ったサポートを提供します。</p>
+                </div>
+                
+                <div class="features__card">
+                    <div class="features__card-number">05</div>
+                    <div class="features__card-icon">🤝</div>
+                    <h3 class="features__card-title">卒業後もコミュニティ参加</h3>
+                    <p class="features__card-text">受講後も仲間とつながり、情報交換や相談ができるコミュニティに参加できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CURRICULUM SECTION
+    ======================================== -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <h2 class="section-title section-title--center section-title--light">
+                <span class="section-title__sub">Curriculum</span>
+                2週間で身につくカリキュラム
+            </h2>
+            
+            <div class="curriculum__timeline">
+                <div class="curriculum__item">
+                    <div class="curriculum__marker">
+                        <span class="curriculum__day">Day 1-2</span>
+                    </div>
+                    <div class="curriculum__content">
+                        <h3 class="curriculum__title">環境構築 & AI基礎</h3>
+                        <p class="curriculum__text">Cursor、Claude、ChatGPTなどのAIツールの使い方を学び、開発環境を整えます。</p>
+                        <ul class="curriculum__list">
+                            <li>開発環境のセットアップ</li>
+                            <li>AIツールの基本操作</li>
+                            <li>効果的なプロンプトの基礎</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum__item">
+                    <div class="curriculum__marker">
+                        <span class="curriculum__day">Day 3-4</span>
+                    </div>
+                    <div class="curriculum__content">
+                        <h3 class="curriculum__title">プロンプトエンジニアリング</h3>
+                        <p class="curriculum__text">AIに的確な指示を出すためのテクニックを習得します。</p>
+                        <ul class="curriculum__list">
+                            <li>効果的な指示の出し方</li>
+                            <li>コンテキストの与え方</li>
+                            <li>エラー対処法</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum__item">
+                    <div class="curriculum__marker">
+                        <span class="curriculum__day">Day 5-7</span>
+                    </div>
+                    <div class="curriculum__content">
+                        <h3 class="curriculum__title">Webアプリ開発基礎</h3>
+                        <p class="curriculum__text">HTML/CSS/JavaScriptの基礎をAIを使って効率的に学びます。</p>
+                        <ul class="curriculum__list">
+                            <li>Webページの構造理解</li>
+                            <li>スタイリングの基礎</li>
+                            <li>インタラクティブな機能の追加</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum__item">
+                    <div class="curriculum__marker">
+                        <span class="curriculum__day">Day 8-10</span>
+                    </div>
+                    <div class="curriculum__content">
+                        <h3 class="curriculum__title">フルスタック開発</h3>
+                        <p class="curriculum__text">データベース連携やAPI構築など、本格的なアプリ開発を学びます。</p>
+                        <ul class="curriculum__list">
+                            <li>データベースの基礎</li>
+                            <li>API設計と実装</li>
+                            <li>認証機能の追加</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum__item">
+                    <div class="curriculum__marker">
+                        <span class="curriculum__day">Day 11-13</span>
+                    </div>
+                    <div class="curriculum__content">
+                        <h3 class="curriculum__title">オリジナルアプリ開発</h3>
+                        <p class="curriculum__text">自分のアイデアを形にする実践プロジェクトに取り組みます。</p>
+                        <ul class="curriculum__list">
+                            <li>企画・設計</li>
+                            <li>開発・実装</li>
+                            <li>デバッグ・改善</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum__item">
+                    <div class="curriculum__marker">
+                        <span class="curriculum__day">Day 14</span>
+                    </div>
+                    <div class="curriculum__content">
+                        <h3 class="curriculum__title">成果発表 & 卒業</h3>
+                        <p class="curriculum__text">作成したアプリを発表し、フィードバックを受けて卒業します。</p>
+                        <ul class="curriculum__list">
+                            <li>プレゼンテーション</li>
+                            <li>フィードバック</li>
+                            <li>今後の学習ロードマップ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WORKS SECTION
+    ======================================== -->
+    <section class="works" id="works">
+        <div class="container">
+            <h2 class="section-title section-title--center">
+                <span class="section-title__sub">Works</span>
+                受講後に作れるもの
+            </h2>
+            
+            <div class="works__grid">
+                <div class="works__card">
+                    <div class="works__card-image">
+                        <img src="https://placehold.co/400x250/1E293B/00D4FF?text=Task+App" alt="タスク管理アプリ">
+                    </div>
+                    <div class="works__card-content">
+                        <h3 class="works__card-title">タスク管理アプリ</h3>
+                        <p class="works__card-text">ドラッグ&ドロップで並び替え可能なカンバンボード形式のタスク管理ツール</p>
+                    </div>
+                </div>
+                
+                <div class="works__card">
+                    <div class="works__card-image">
+                        <img src="https://placehold.co/400x250/1E293B/8B5CF6?text=EC+Site" alt="ECサイト">
+                    </div>
+                    <div class="works__card-content">
+                        <h3 class="works__card-title">ECサイト</h3>
+                        <p class="works__card-text">商品一覧、カート機能、決済連携を備えたオンラインショップ</p>
+                    </div>
+                </div>
+                
+                <div class="works__card">
+                    <div class="works__card-image">
+                        <img src="https://placehold.co/400x250/1E293B/10B981?text=Portfolio" alt="ポートフォリオサイト">
+                    </div>
+                    <div class="works__card-content">
+                        <h3 class="works__card-title">ポートフォリオサイト</h3>
+                        <p class="works__card-text">自分の作品やスキルを魅力的に紹介するWebサイト</p>
+                    </div>
+                </div>
+                
+                <div class="works__card">
+                    <div class="works__card-image">
+                        <img src="https://placehold.co/400x250/1E293B/F97316?text=Chatbot" alt="チャットボット">
+                    </div>
+                    <div class="works__card-content">
+                        <h3 class="works__card-title">AIチャットボット</h3>
+                        <p class="works__card-text">カスタマーサポートや情報提供を自動化するAIアシスタント</p>
+                    </div>
+                </div>
+                
+                <div class="works__card">
+                    <div class="works__card-image">
+                        <img src="https://placehold.co/400x250/1E293B/EF4444?text=Automation" alt="業務効率化ツール">
+                    </div>
+                    <div class="works__card-content">
+                        <h3 class="works__card-title">業務効率化ツール</h3>
+                        <p class="works__card-text">データ入力や集計作業を自動化する社内ツール</p>
+                    </div>
+                </div>
+                
+                <div class="works__card">
+                    <div class="works__card-image">
+                        <img src="https://placehold.co/400x250/1E293B/22C55E?text=SNS+Clone" alt="SNSクローン">
+                    </div>
+                    <div class="works__card-content">
+                        <h3 class="works__card-title">SNSアプリ</h3>
+                        <p class="works__card-text">投稿、いいね、フォロー機能を備えたソーシャルメディア</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         INSTRUCTORS SECTION
+    ======================================== -->
+    <section class="instructors" id="instructors">
+        <div class="container">
+            <h2 class="section-title section-title--center section-title--light">
+                <span class="section-title__sub">Instructors</span>
+                経験豊富な講師陣
+            </h2>
+            
+            <div class="instructors__grid">
+                <div class="instructors__card">
+                    <div class="instructors__card-image">
+                        <img src="https://placehold.co/200x200/1E293B/00D4FF?text=Instructor+1" alt="山田 太郎">
+                    </div>
+                    <div class="instructors__card-content">
+                        <h3 class="instructors__card-name">山田 太郎</h3>
+                        <p class="instructors__card-title">メイン講師 / テックリード</p>
+                        <p class="instructors__card-bio">大手IT企業で10年以上の開発経験。AI駆動開発の第一人者として、多くの企業研修を担当。</p>
+                        <div class="instructors__card-social">
+                            <a href="#" class="instructors__social-link" aria-label="Twitter">𝕏</a>
+                            <a href="#" class="instructors__social-link" aria-label="GitHub">GH</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructors__card">
+                    <div class="instructors__card-image">
+                        <img src="https://placehold.co/200x200/1E293B/8B5CF6?text=Instructor+2" alt="佐藤 花子">
+                    </div>
+                    <div class="instructors__card-content">
+                        <h3 class="instructors__card-name">佐藤 花子</h3>
+                        <p class="instructors__card-title">サブ講師 / UXデザイナー</p>
+                        <p class="instructors__card-bio">デザインとエンジニアリングの両方に精通。非エンジニア向けの講座を多数開発。</p>
+                        <div class="instructors__card-social">
+                            <a href="#" class="instructors__social-link" aria-label="Twitter">𝕏</a>
+                            <a href="#" class="instructors__social-link" aria-label="GitHub">GH</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructors__card">
+                    <div class="instructors__card-image">
+                        <img src="https://placehold.co/200x200/1E293B/10B981?text=Instructor+3" alt="鈴木 一郎">
+                    </div>
+                    <div class="instructors__card-content">
+                        <h3 class="instructors__card-name">鈴木 一郎</h3>
+                        <p class="instructors__card-title">メンター / フルスタックエンジニア</p>
+                        <p class="instructors__card-bio">スタートアップCTOを経て独立。個人開発で複数のサービスをローンチした経験を持つ。</p>
+                        <div class="instructors__card-social">
+                            <a href="#" class="instructors__social-link" aria-label="Twitter">𝕏</a>
+                            <a href="#" class="instructors__social-link" aria-label="GitHub">GH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS SECTION
+    ======================================== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title section-title--center">
+                <span class="section-title__sub">Testimonials</span>
+                受講者の声
+            </h2>
+            
+            <div class="testimonials__slider" id="testimonialSlider">
+                <div class="testimonials__track">
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-header">
+                            <img src="https://placehold.co/80x80/1E293B/00D4FF?text=User+1" alt="田中さん" class="testimonials__avatar">
+                            <div class="testimonials__card-info">
+                                <h4 class="testimonials__card-name">田中 美咲さん</h4>
+                                <p class="testimonials__card-role">マーケター / 32歳</p>
+                                <div class="testimonials__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonials__quote">
+                            「プログラミングは全くの未経験でしたが、2週間で自社のキャンペーンサイトを作れるようになりました。外注していた作業が自分でできるようになり、コスト削減にもつながっています。」
+                        </blockquote>
+                        <div class="testimonials__result">
+                            <span class="testimonials__result-label">受講後の成果</span>
+                            <span class="testimonials__result-value">自社サイトを3つ制作</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-header">
+                            <img src="https://placehold.co/80x80/1E293B/8B5CF6?text=User+2" alt="木村さん" class="testimonials__avatar">
+                            <div class="testimonials__card-info">
+                                <h4 class="testimonials__card-name">木村 健太さん</h4>
+                                <p class="testimonials__card-role">起業家 / 28歳</p>
+                                <div class="testimonials__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonials__quote">
+                            「アイデアはあるのにエンジニアを見つけられず困っていました。この講座のおかげで、MVPを自分で作れるようになり、資金調達にも成功しました。」
+                        </blockquote>
+                        <div class="testimonials__result">
+                            <span class="testimonials__result-label">受講後の成果</span>
+                            <span class="testimonials__result-value">シードラウンドで3000万円調達</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials__card">
+                        <div class="testimonials__card-header">
+                            <img src="https://placehold.co/80x80/1E293B/10B981?text=User+3" alt="中村さん" class="testimonials__avatar">
+                            <div class="testimonials__card-info">
+                                <h4 class="testimonials__card-name">中村 優子さん</h4>
+                                <p class="testimonials__card-role">事務職 / 45歳</p>
+                                <div class="testimonials__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonials__quote">
+                            「以前プログラミングスクールで挫折した経験がありましたが、バイブコーディングは全く違いました。AIと会話するだけなので、楽しみながら学べました。」
+                        </blockquote>
+                        <div class="testimonials__result">
+                            <span class="testimonials__result-label">受講後の成果</span>
+                            <span class="testimonials__result-value">社内業務効率化ツールを開発</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__controls">
+                    <button class="testimonials__btn testimonials__btn--prev" aria-label="前へ">←</button>
+                    <div class="testimonials__dots">
+                        <span class="testimonials__dot testimonials__dot--active"></span>
+                        <span class="testimonials__dot"></span>
+                        <span class="testimonials__dot"></span>
+                    </div>
+                    <button class="testimonials__btn testimonials__btn--next" aria-label="次へ">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRICING SECTION
+    ======================================== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title section-title--center section-title--light">
+                <span class="section-title__sub">Pricing</span>
+                料金プラン
+            </h2>
+            
+            <div class="pricing__grid">
+                <div class="pricing__card">
+                    <div class="pricing__card-header">
+                        <h3 class="pricing__card-name">ベーシック</h3>
+                        <p class="pricing__card-desc">まずは基礎を学びたい方に</p>
+                    </div>
+                    <div class="pricing__card-price">
+                        <span class="pricing__price-amount">¥98,000</span>
+                        <span class="pricing__price-tax">（税込）</span>
+                    </div>
+                    <ul class="pricing__card-features">
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            全14日間のカリキュラム
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            オンライン動画教材
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            質問チャットサポート
+                        </li>
+                        <li class="pricing__feature pricing__feature--disabled">
+                            <span class="pricing__feature-icon">−</span>
+                            個別メンタリング
+                        </li>
+                        <li class="pricing__feature pricing__feature--disabled">
+                            <span class="pricing__feature-icon">−</span>
+                            卒業後コミュニティ
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn--outline btn--full">このプランを選ぶ</a>
+                </div>
+                
+                <div class="pricing__card pricing__card--featured">
+                    <div class="pricing__card-badge">人気No.1</div>
+                    <div class="pricing__card-header">
+                        <h3 class="pricing__card-name">スタンダード</h3>
+                        <p class="pricing__card-desc">しっかり学びたい方におすすめ</p>
+                    </div>
+                    <div class="pricing__card-price">
+                        <span class="pricing__price-original">¥198,000</span>
+                        <span class="pricing__price-amount">¥148,000</span>
+                        <span class="pricing__price-tax">（税込）</span>
+                    </div>
+                    <ul class="pricing__card-features">
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            全14日間のカリキュラム
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            オンライン動画教材
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            質問チャットサポート
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            週2回の個別メンタリング
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            卒業後コミュニティ参加
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn--primary btn--full btn--glow">このプランを選ぶ</a>
+                </div>
+                
+                <div class="pricing__card">
+                    <div class="pricing__card-header">
+                        <h3 class="pricing__card-name">プレミアム</h3>
+                        <p class="pricing__card-desc">徹底サポートを受けたい方に</p>
+                    </div>
+                    <div class="pricing__card-price">
+                        <span class="pricing__price-amount">¥298,000</span>
+                        <span class="pricing__price-tax">（税込）</span>
+                    </div>
+                    <ul class="pricing__card-features">
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            全14日間のカリキュラム
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            オンライン動画教材
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            質問チャットサポート
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            毎日の個別メンタリング
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            卒業後コミュニティ参加
+                        </li>
+                        <li class="pricing__feature">
+                            <span class="pricing__feature-icon">✓</span>
+                            転職・案件獲得サポート
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn--outline btn--full">このプランを選ぶ</a>
+                </div>
+            </div>
+            
+            <div class="pricing__guarantee">
+                <div class="pricing__guarantee-icon">🛡️</div>
+                <div class="pricing__guarantee-content">
+                    <h4 class="pricing__guarantee-title">30日間返金保証</h4>
+                    <p class="pricing__guarantee-text">万が一ご満足いただけなかった場合、受講開始から30日以内であれば全額返金いたします。安心してお申し込みください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FAQ SECTION
+    ======================================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title section-title--center">
+                <span class="section-title__sub">FAQ</span>
+                よくある質問
+            </h2>
+            
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">プログラミング未経験でも大丈夫ですか？</span>
+                        <span class="faq__question-icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>はい、全く問題ありません。むしろ未経験の方こそ、バイブコーディングの恩恵を最大限に受けられます。従来のプログラミング学習とは異なり、コードを書く必要がないため、専門知識がなくても始められます。</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">必要な機材は何ですか？</span>
+                        <span class="faq__question-icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>インターネットに接続できるパソコン（Windows/Mac）があれば受講可能です。スペックは一般的なノートPCで十分です。スマートフォンやタブレットのみでの受講は推奨していません。</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">仕事をしながらでも受講できますか？</span>
+                        <span class="faq__question-icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>はい、可能です。1日2〜3時間の学習時間を確保できれば、働きながらでも2週間で修了できます。動画教材は24時間いつでも視聴可能で、自分のペースで進められます。</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">受講後のサポートはありますか？</span>
+                        <span class="faq__question-icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>スタンダード・プレミアムプランでは、卒業後もコミュニティに参加でき、他の受講生や講師と情報交換ができます。また、プレミアムプランでは転職や案件獲得のサポートも提供しています。</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">返金保証について詳しく教えてください。</span>
+                        <span class="faq__question-icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>受講開始から30日以内であれば、理由を問わず全額返金いたします。「思っていた内容と違った」「自分には合わなかった」など、どんな理由でも構いません。返金申請はメールで受け付けており、申請後7営業日以内にご指定の口座に振り込みます。</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span class="faq__question-text">AIツールの利用料金は別途かかりますか？</span>
+                        <span class="faq__question-icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>講座で使用するAIツール（Cursor、Claude、ChatGPTなど）には無料プランがあり、学習中はそちらで十分対応できます。より高度な機能を使いたい場合は、各サービスの有料プランへの加入をご検討ください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FINAL CTA SECTION
+    ======================================== -->
+    <section class="final-cta" id="cta">
+        <div class="final-cta__background"></div>
+        <div class="container">
+            <div class="final-cta__content">
+                <h2 class="final-cta__title">
+                    あなたのアイデアを、<br>今すぐ形にしよう
+                </h2>
+                <p class="final-cta__subtitle">
+                    まずは無料体験で、バイブコーディングの可能性を体感してください
+                </p>
+                
+                <form class="final-cta__form" id="ctaForm">
+                    <div class="final-cta__form-group">
+                        <input type="email" class="final-cta__input" placeholder="メールアドレスを入力" required>
+                        <button type="submit" class="btn btn--primary btn--lg btn--glow">
+                            無料体験に申し込む
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="final-cta__trust">
+                    <div class="final-cta__trust-item">
+                        <span class="final-cta__trust-icon">✓</span>
+                        <span class="final-cta__trust-text">無料体験は完全無料</span>
+                    </div>
+                    <div class="final-cta__trust-item">
+                        <span class="final-cta__trust-icon">✓</span>
+                        <span class="final-cta__trust-text">しつこい勧誘なし</span>
+                    </div>
+                    <div class="final-cta__trust-item">
+                        <span class="final-cta__trust-icon">✓</span>
+                        <span class="final-cta__trust-text">オンラインで完結</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="footer__logo-icon">⚡</span>
+                        <span class="footer__logo-text">Vibe<span class="footer__logo-accent">Coding</span></span>
+                    </a>
+                    <p class="footer__tagline">AIと会話するだけで、アプリが作れる時代。</p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__links-group">
+                        <h4 class="footer__links-title">講座について</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#features">特徴</a></li>
+                            <li><a href="#curriculum">カリキュラム</a></li>
+                            <li><a href="#instructors">講師紹介</a></li>
+                            <li><a href="#pricing">料金プラン</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__links-group">
+                        <h4 class="footer__links-title">サポート</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#faq">よくある質問</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">受講者の声</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__links-group">
+                        <h4 class="footer__links-title">法的情報</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">プライバシーポリシー</a></li>
+                            <li><a href="#">特定商取引法に基づく表記</a></li>
+                            <li><a href="#">利用規約</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+                </div>
+                <p class="footer__copyright">© 2026 Vibe Coding Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
